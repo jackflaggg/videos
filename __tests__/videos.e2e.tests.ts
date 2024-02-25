@@ -18,6 +18,7 @@ describe('/videos', () => {
             .get('/videos')
             .expect(200)
 
-        console.log(res.body)
+        console.log(res.body);
+        expect(res.body.length).toBe(0)
     })
 })
