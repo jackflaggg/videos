@@ -1,11 +1,9 @@
 // место старта нашего приложения
+import {SETTINGS} from "./settings";
+import {app} from "./app";
 
-import express from "express";
-
-export const app = express();
-
-export const PORT = 3004;
-
-app.listen(PORT, () => {
-    console.log(`Данный порт: ${PORT} успешно запущен!`)
+app.listen(SETTINGS.PORT, () => {
+    console.log(`Данный порт: ${SETTINGS.PORT} успешно запущен!`)
 });
+
+
